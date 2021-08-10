@@ -1,0 +1,36 @@
+@media only screen and (min-width: 768px) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .fa-search {
+      position: absolute;
+      right: 10%;
+      top: 25px;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+    .header li input {
+      width: 85%;
+    }
+    .header li a button {
+      padding: 5px 20px;
+      border-radius: 50px;
+      width: 110px;
+      border: 1px solid rgb(177, 177, 177);
+      cursor: pointer;
+      background-color: white;
+    }
+    .header li a button:hover {
+      background-color: #5f97ff;
+      color: #462066;
+    }
+  }
