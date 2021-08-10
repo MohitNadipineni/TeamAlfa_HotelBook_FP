@@ -98,3 +98,41 @@
   -o-animation-delay: 0s;
   animation-delay: 0s;
 }
+
+
+
+/*login*/
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e5e5;
+  padding: 20px 30px;
+}
+
+.login-image img {
+  width: 100px;
+  height: 100px;
+}
+
+.login-image {
+  width: 100%;
+  text-align: center;
+}
+
+.login-box {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid gray;
+}
+
+.login-side-back {
+  background-image: url(./image/hotel.png);
+  width: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid gray;
+}
