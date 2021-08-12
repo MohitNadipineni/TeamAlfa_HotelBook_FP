@@ -565,3 +565,96 @@
   background: #f1f1f1;
   background-clip: content-box;
 }
+
+/*hotel list*/
+
+.hotellist-container {
+  display: flex;
+  padding: 70px;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.hotellist-box {
+  display: flex;
+  margin-top: 20px;
+  padding: 20px;
+  position: relative;
+  border: 1px solid rgb(192, 191, 191);
+}
+
+.bin {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.bin i:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.hotellist-image img {
+  width: 200px;
+  height: 250px;
+  margin-right: 40px;
+}
+
+.hotellist-detail-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hotellist-location {
+  margin-left: 3px;
+}
+
+.hotellist-checkroom-box {
+  display: flex;
+}
+
+.hotellist-info-container {
+  margin-top: 20px;
+}
+
+.hotellist-include-icon span {
+  font-size: 1.2em;
+}
+
+.hotellist-info-container ul {
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.hotellist-price {
+  width: 50%;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.hotellist-price-off {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.hotellist-offer span:nth-child(1) {
+  color: #bebebe;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.hotellist-offer span:nth-child(2) {
+  color: rgb(17, 156, 40);
+  font-weight: 600;
+}
+
+.hotellist-price button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: 0px;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(72, 101, 233);
+}
