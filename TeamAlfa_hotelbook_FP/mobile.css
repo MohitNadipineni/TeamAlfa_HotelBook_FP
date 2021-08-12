@@ -181,5 +181,52 @@ body {
       padding: 10px !important;
     }
     
+    /*register*/
+  .register-side-back {
+    display: none;
+  }
+  .register-wrapper {
+    padding: 20px 20px;
+  }
+  .register-box {
+    position: relative;
+    transform: translate(0%, 0%);
+    left: 0px;
+    top: 0px;
+    border: none;
+    height: 100vh;
+    background-color: #e5e5e5;
+    display: block;
+  }
+  .register-heading {
+    margin-top: 30px;
+  }
+  .register-inputs input {
+    width: 80%;
+    padding-left: 0px;
+    color: black;
+    margin-top: 40px;
+  }
+  .register-button button {
+    margin-top: 40px;
+  }
+  .register-text p {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .input-recaptha {
+    width: 30px !important;
+  }
+  .recaptha-label {
+    font-size: 0.8em;
+    margin-left: 5px;
+  }
+  #male {
+    width: 30px !important;
+  }
+  #female {
+    width: 30px !important;
+  }
+
   }
   
