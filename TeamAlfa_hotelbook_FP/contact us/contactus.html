@@ -85,11 +85,27 @@
         </div>
     </div>
     <!--script tag-->
-    
+    <script>
+        window.onload=()=>{
+            if(localStorage.getItem("login")=="true"){
+                document.getElementById("logout").innerHTML="Log out"
+            }
+            else{
+                document.getElementById("logout").innerHTML="Login"
+        
+            }
+        }
+        document.getElementById('search-btn').onclick = () => {
+    let val = document.getElementById('search').value;
+    localStorage.setItem("search", val);
+    window.location = '../hotelslist/hotellist.html'
+
+}
+        </script>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </body>
 
