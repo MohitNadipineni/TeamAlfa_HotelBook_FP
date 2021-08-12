@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../mobile.css" />
+    <link rel="stylesheet" href="../desktop.css" />
+    <link rel="stylesheet" href="../tablet.css" />
+
+    <!--font awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <title>Hotel Booking</title>
+</head>
+
+<body>
+      <!--script tag-->
+      <script>
+
+        window.onload = () => {
+            let request = window.indexedDB.open("hotels", 1)
+                , db, tx, store, index, wishlist
+                ;
+
+            request.onupgradeneeded = (e) => {
+                let db = request.result;
+                let store = db.createObjectStore("hotelsinfo", {
+                    keyPath: "id"
+                });
+                let index = store.createIndex("city", "city", { unique: false });
+                let storewishlist = db.createObjectStore("hotelwishlist", { keyPath: "uid", autoIncrement: true });
+                let indexwishlist = storewishlist.createIndex("title", "title", { unique: false });
+                let indexwishlist2 = storewishlist.createIndex("mail", "mail", { unique: false });
+                let storedetails = db.createObjectStore("details", { keyPath: "id" });
+                let indexdetails = storedetails.createIndex("title", "title", { unique: false });
+                let managestore = db.createObjectStore("manage", { keyPath: "uid", autoIncrement: true });
+                let indexmanage = managestore.createIndex("title", "title", { unique: false });
+                let indexmanage2 = managestore.createIndex("mail", "mail", { unique: false });
+                let checkinstore = db.createObjectStore("checkin", { keyPath: "id" });
+                let indexcheckin = checkinstore.createIndex("id", "id", { unique: false });
+                let userstore = db.createObjectStore("user", { keyPath: "mail" });
+                let indexuser = userstore.createIndex("mail", "mail", { unique: false });
+
+            }
+
+            request.onerror = (e) => {
+                console.log('error is comming' + e.target.errorCode);
+            }
+          
+        }
+
+    </script>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+
+</html>
