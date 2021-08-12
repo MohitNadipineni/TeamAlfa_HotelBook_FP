@@ -33,7 +33,103 @@
       background-color: #5f97ff;
       color: #462066;
     }
-  }
+    
+/*register*/
+
+.register-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e5e5;
+  padding: 20px 60px;
+}
+
+.register-image img {
+  width: 50px;
+  height: 50px;
+  float: right;
+  justify-content: center;
+  display: inline;
+}
+
+.register-image {
+  width: 100%;
+  text-align: center;
+}
+
+.register-box {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid gray;
+}
+
+.register-side-back {
+  background-image: url(./image/hotel1.png);
+  width: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid gray;
+}
+
+.register-inputs input {
+  border: none;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding: 10px 10px;
+  padding-right: 30px;
+  display: block;
+  background: rgba(128, 128, 128, 0);
+  margin-top: 20px;
+  outline: none;
+  color: rgb(0, 0, 0);
+}
+
+.register-button button {
+  border-radius: 50px;
+  width: 100%;
+  background-color: #2b3444;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.register-text p a {
+  color: rgb(85, 85, 85);
+}
+
+.register-text p {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#male {
+  display: inline;
+}
+
+#female {
+  display: inline;
+}
+
+.register-heading {
+  display: inline;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.input-recaptha {
+  display: inline !important;
+  margin: 0px;
+  margin-top: 23px;
+}
+
+.recaptha-label {
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+
+}
 
   
 /*top-slider*/
