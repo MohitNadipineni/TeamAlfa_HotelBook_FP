@@ -227,6 +227,27 @@ body {
   #female {
     width: 30px !important;
   }
+  .contactus-container {
+    width: 100% !important;
+    flex-direction: column !important;
+    position: relative !important;
+    transform: translate(0%, 0%) !important;
+    top: 0px !important;
+    left: 0px !important;
+  }
+  .contactus-info {
+    padding: 0px !important;
+    padding-top: 100px !important;
+    text-align: center;
+  }
+  .contactus-input {
+    padding:30px 0px !important;
+    align-items: flex-start !important;
+    
+  }
+  .btn{
+    margin-left: 20px;
+  }
 
   }
   
