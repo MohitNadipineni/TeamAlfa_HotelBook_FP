@@ -249,5 +249,34 @@ body {
     margin-left: 20px;
   }
 
+
+  /*checkin*/
+  .checkin-box {
+    padding-top: 100px;
+    position: relative !important;
+    transform: translate(0%, 0%) !important;
+    left: 0px !important;
+    top: 0px !important;
+    border: none !important;
+    height: 100vh !important;
+    background-color: #e5e5e5 !important;
+    display: block !important;
+  }
+  .checkin-heading {
+    margin-top: 30px !important;
+  }
+  .checkin-inputs input {
+    width: 80%;
+    padding-left: 0px;
+    color: black;
+    margin-top: 40px;
+  }
+  .checkin-button button {
+    margin-top: 40px;
+  }
+  .checkin-text p {
+    margin-top: 30px;
+    text-align: center;
+  }
   }
   
