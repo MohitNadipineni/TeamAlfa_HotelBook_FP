@@ -87,3 +87,49 @@ function ValidateEmail(mail) {
     return (false)
 }
 
+
+
+var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB || window.shimIndexedDB,
+    IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.msIDBTransaction,
+    baseName = "hotels",
+    storeName = "user";
+
+function logerr(err) {
+    console.log(err);
+}
+
+function connectDB(f) {
+
+    var request = indexedDB.open(baseName, 1);
+    request.onerror = logerr;
+    request.onsuccess = function () {
+        f(request.result);
+    }
+    request.onupgradeneeded = function (e) {
+
+        var Db = e.currentTarget.result;
+
+
+        if (!Db.objectStoreNames.contains(storeName)) {
+            var store = Db.createObjectStore(storeName, { keyPath: "email" });
+            var index = store.createIndex("email", "email", { unique: true });
+
+        }
+        connectDB(f);
+    }
+}
+function add(obj, info) {
+    info = typeof info !== 'undefined' ? false : true;
+    connectDB(function (db) {
+        var transaction = db.transaction([storeName], "readwrite");
+        var objectStore = transaction.objectStore(storeName);
+        var objectStoreRequest = objectStore.add(obj);
+        objectStoreRequest.onerror = logerr;
+        objectStoreRequest.onsuccess = function () {
+            if (info) { console.log("Rows has been added"); }
+            else { console.log("Rows has been updated"); }
+            console.info(objectStoreRequest.result);
+            window.location = "../login/login.html"
+        }
+    });
+}
