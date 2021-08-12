@@ -291,5 +291,59 @@
 }
 
 
+.contactus-container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  width: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contactus-info {
+  padding: 60px;
+  width: 100%;
+  background-color: rgb(37, 29, 29);
+  color: white;
+}
+.contactus-info p{
+  width: 100%;
+  font-size: 0.7em;
+}
+.contactus-info h1{
+  font-size: 2em;
+  width: 100%;
+}
+.contactus-input {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: teal;
+  width: 100%;
+  justify-content: right;
+  align-items: flex-end;
+}
+.contactus-input input{
+  padding: 10px 20px;
+  margin: 20px;
+  width: 80%;
+  margin-right: 0px;
+
+}
+.contactus-input textarea{
+  padding: 10px 20px;
+  margin: 20px;
+  width: 80%;
+  margin-right: 0px;
+  height: 100px;
+}
+.btn{
+  border:none;
+  padding: 10px 20px;
+  background-color: rgb(128, 58, 0);
+  color: white;
+  width: 50%;
+  justify-content: right;
+}
 
 
