@@ -347,3 +347,84 @@
 }
 
 
+/*checkin*/
+
+.checkin-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e5e5;
+  padding: 20px 30px;
+}
+
+.checkin-image img {
+  width: 100px;
+  height: 100px;
+}
+
+.checkin-image {
+  width: 100%;
+  text-align: center;
+}
+
+.checkin-box {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -43%);
+  border: 1px solid gray;
+}
+
+.checkin-side-back {
+  background-image: url(./image/hotel.png);
+  width: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid gray;
+}
+
+.checkin-inputs input {
+  border: none;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding: 10px 20px;
+  display: block;
+  background: rgba(128, 128, 128, 0);
+  margin-top: 20px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  width: 87%;
+}
+
+.checkin-button button {
+  border-radius: 50px;
+  width: 100%;
+  background-color: #2b3444;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.checkin-text p a {
+  color: rgb(85, 85, 85);
+}
+
+.checkin-text p {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#checkin-datefrom, #checkin-dateto {
+  display: inline;
+  margin: 10px;
+  width: 36%;
+}
+
+.checkin-date {
+  width: 100%;
+  display: flex;
+}
+
+.checkin-heading h3 {
+  text-transform: uppercase;
+}
