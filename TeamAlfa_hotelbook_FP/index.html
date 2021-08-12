@@ -17,34 +17,54 @@
 
     <title>Hotel Booking</title>
 </head>
+
 <body>
     <!--navbar-->
     <header class="header">
-        <img class="header-logo"
-            src="https://img.favpng.com/13/11/22/booking-com-hotel-logo-discounts-and-allowances-room-png-favpng-1HAAzSuBaAy6MaRtp4nwvUW5T.jpg"
-            alt="logo" />
+        <a href="./index.html"> <img class="header-logo"
+            src="./image/logo.png"
+            alt="logo" /></a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
             <li>
-                <i class="fa fa-search"></i>
-                <input type="text" placeholder="Search Hotels" />
+                <i class="fa fa-search" id="search-btn"></i>
+                <input type="text" id="search" placeholder="Search Hotels" />
             </li>
             
             <li>
-                <a href="">
+                <a href="./wishlist/wishlist.html">
                     <button><i class="fa fa-heart-o heart"></i>Wishlist</button>
 
                 </a>
             </li>
             <li>
-                <a href="">
-                    <button><i class="fa fa-user-circle"></i> User</button>
+                <a href="./manage/manage.html">
+                    <button><i class="fa fa-book"></i> Booking</button>
+
+                </a>
+            </li>
+            <li>
+                <a href="./login/login.html">
+                    <button id="logout"><i class="fa fa-user-circle"></i> Login</button>
+
+                </a>
+            </li>
+            <li>
+                <a href="./about us/aboutus.html">
+                    <button><i class="fa fa-globe"></i>About Us</button>
+
+                </a>
+            </li>
+            <li>
+                <a href="./contact us/contactus.html">
+                    <button><i class="fa fa-envelope"></i>Contact Us</button>
 
                 </a>
             </li>
         </ul>
     </header>
+
     <div class="top-slider-box">
 
         <div class="top-slider-pic"><img src="./image/hotel1.jpg" alt="top-slider Image" class="top-slider-image" />
@@ -58,6 +78,25 @@
 
     </div>
 
+
+    <div class="hotel-card-grid" id="home-container">
+        
+        
+       
+        
+
+       
+    </div>
+
+
+
+
+    <!--script tag-->
+    <script src="index.js"></script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </body>
 </html>
