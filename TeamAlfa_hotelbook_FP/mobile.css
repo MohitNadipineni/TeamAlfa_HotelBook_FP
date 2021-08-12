@@ -171,6 +171,15 @@ body {
       margin-top: 30px;
       text-align: center;
     }
+    .about-container {
+      padding-top: 60px !important;
+    }
+    .about-page {
+      padding: 10px !important;
+    }
+    .about-places {
+      padding: 10px !important;
+    }
     
   }
   
