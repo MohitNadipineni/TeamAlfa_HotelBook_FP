@@ -338,5 +338,25 @@ body {
       padding-left: 10px !important;
     }
 
+    /*hotel list*/
+  .hotellist-container {
+    padding: 0px !important;
+    padding-top: 100px !important;
+  }
+  .hotellist-image img {
+    width: 100px !important;
+    height: 150px !important;
+  }
+  .hotellist-info-container {
+    display: none;
+  }
+  .hotellist-price {
+    text-align: left !important;
+    width: 100% !important;
+  }
+  .hotellist-price button {
+    width: 100%;
+  }
+
 }
   
