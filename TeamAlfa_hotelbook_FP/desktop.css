@@ -428,3 +428,140 @@
 .checkin-heading h3 {
   text-transform: uppercase;
 }
+
+
+/*detail page*/
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.detail-info {
+  display: flex;
+  padding: 20px 100px;
+}
+
+.detail-name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.detail-name-head span:nth-child(1) {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.detail-location {
+  font-size: 0.8em;
+  color: rgb(206, 206, 206);
+}
+
+.detail-price {
+  width: 100%;
+  justify-content: right;
+  text-align: right;
+  align-items: center;
+}
+
+.detail-price span:nth-child(1) {
+  color: rgb(206, 206, 206);
+  text-decoration: line-through;
+}
+
+.detail-price span:nth-child(2) {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.detail-price span button {
+  padding: 20px 20px;
+  margin-left: 10px;
+  border: 0px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(72, 101, 233);
+}
+
+.detail-image {
+  overflow-x: scroll;
+  display: flex;
+}
+
+.detail-image div {
+  width: 400px;
+  margin-right: 2px;
+  display: inline-block;
+}
+
+.detail-image div img {
+  width: 400px;
+  display: inline-block;
+  height: 300px;
+}
+
+.detail-description-box {
+  padding: 50px;
+}
+
+.detail-description {
+  border: 1px solid rgb(192, 192, 192);
+  padding: 30px;
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+}
+
+.detail-include-heading {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.detail-include-list div {
+  display: inline-block;
+}
+
+.detail-include-list div span:nth-child(1) {
+  padding: 20px;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.detail-include-list {
+  padding: 20px 0px;
+}
+
+.detail-amenities-heading {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.detail-amenities ul {
+  display: inline-block;
+}
+
+.detail-amenities {
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.detail-desc-heading {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+::-webkit-scrollbar {
+  height: 2px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  background-clip: content-box;
+}
