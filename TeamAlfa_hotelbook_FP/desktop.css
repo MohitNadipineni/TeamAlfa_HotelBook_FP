@@ -166,3 +166,34 @@
   margin-top: 10px;
   margin-left: 20px;
 }
+
+.about-container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-page {
+  padding: 50px;
+  text-align: center;
+}
+
+.about-page h1 {
+  font-weight: 100;
+}
+
+.about-page p {
+  color: rgb(133, 133, 133);
+}
+
+.about-places {
+  background-image: url('https://ak.picdn.net/shutterstock/videos/5697320/thumb/1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 50px;
+  color: white;
+}
+
+
+
+
