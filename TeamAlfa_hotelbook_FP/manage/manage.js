@@ -133,7 +133,45 @@ window.onload = () => {
         }
 
     }
+}
+var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB || window.shimIndexedDB,
+    IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.msIDBTransaction,
+    baseName = "hotels",
+    storeName = "manage";
 
+function logerr(err) {
+    console.log(err);
+}
+function del(id, info) {
+    info = typeof info !== 'undefined' ? false : true;
+    connectDB(function (db) {
+        var transaction = db.transaction(["manage"], "readwrite");
+        var objectStore = transaction.objectStore("manage");
+        var objectStoreRequest = objectStore.delete(id);
+        objectStoreRequest.onerror = logerr;
+        objectStoreRequest.onsuccess = function () {
+            if (info)
+                console.log("Rows has been deleted: ", id);
+        }
+    });
+}
+function connectDB(f) {
+    var request = indexedDB.open("hotels", 1);
+    request.onerror = logerr;
+    request.onsuccess = function () {
+        f(request.result);
+    }
+    request.onupgradeneeded = function (e) {
+        var Db = e.currentTarget.result;
+
+
+
+        //Create store
+        if (!Db.objectStoreNames.contains(storeName)) {
+            var store = Db.createObjectStore(storeName, { keyPath: "id", autoIncrement: true });
+        }
+        connectDB(f);
+    }
 }
 
 
