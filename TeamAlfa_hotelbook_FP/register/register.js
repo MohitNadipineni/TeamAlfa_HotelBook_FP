@@ -20,3 +20,12 @@ terms.onclick = () => {
 }
 
 
+let cont = true;
+document.getElementById('clear-btn').onclick = () => {
+    document.getElementById('reg-mail').value = "";
+    document.getElementById('reg-url').value = "";
+    document.getElementById('reg-date').value = "";
+    document.getElementById('reg-pass').value = "";
+    document.getElementById('reg-pass2').value = "";
+    document.getElementById('reg-comment').value = "";
+}
