@@ -358,5 +358,91 @@ body {
     width: 100%;
   }
 
+  /*manage*/
+
+.manage-container {
+  display: flex;
+  padding: 70px;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.manage-box {
+  display: flex;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid rgb(192, 191, 191);
+}
+
+.manage-image img {
+  width: 200px;
+  height: 250px;
+  margin-right: 40px;
+}
+
+.manage-detail-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.manage-location {
+  margin-left: 3px;
+}
+
+.manage-checkroom-box {
+  display: flex;
+}
+
+.manage-info-container {
+  margin-top: 20px;
+}
+
+.manage-include-icon span {
+  font-size: 1.2em;
+}
+
+.manage-info-container ul {
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.manage-price {
+  width: 50%;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.manage-price-off {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.manage-offer span:nth-child(1) {
+  color: #bebebe;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.manage-offer span:nth-child(2) {
+  color: rgb(17, 156, 40);
+  font-weight: 600;
+}
+
+.manage-price button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: 0px;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(72, 101, 233);
+}
+
+.manage-date {
+  font-weight: 600;
+}
+
+
 }
   
